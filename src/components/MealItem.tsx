@@ -3,7 +3,7 @@ import { Meal } from "../Types/Types";
 function MealItem({ meal }: { meal: Meal }) {
   return (
     <>
-      <li className="flex gap-[3px] font-medium text-[14px] pl-[9px] pt-[10px]">
+      <li className="flex gap-[3px] font-medium sm:text-[14px] text-[10px] pl-[9px] pt-[10px] items-center">
         <p>{meal.quantity}</p>
         <p>x</p>
         <p className="pl-[3.9px] tracking-[0.4px] leading-[22px]">{meal.title}</p>
@@ -12,7 +12,7 @@ function MealItem({ meal }: { meal: Meal }) {
         <ul>
           {meal.preferences.map((meal) => {
             return (
-              <li key={Math.random() + 7} className="font-thin text-[14px] text-left pl-8 leading-[18px]">
+              <li key={Math.random() + 7} className="font-thin sm:text-[14px] text-[8px] text-left pl-8 leading-[18px]">
                 {meal}
               </li>
             );

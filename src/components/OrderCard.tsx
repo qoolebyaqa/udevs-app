@@ -23,7 +23,7 @@ function OrderCard({ order }: { order: IOrder }) {
     <li className="mx-2 my-[9px]" onMouseEnter={order.stage ==='prepare' ? handleVisibleReady : handleVisibleFinish} onMouseLeave={order.stage ==='prepare' ? handleHiddenReady : handleHiddenFinish}>
       <div className="flex justify-between bg-white my-[1px] h-[42px] items-center pl-[10px]">
         <div className="flex">
-          <p className="font-bold text-[22px] tracking-[-1.5px] mr-[8px]">ID: {order.id}</p>
+          <p className="font-bold sm:text-[22px] text-[12px] tracking-[-1.5px] mr-[8px]">ID: {order.id}</p>
           <SVGComponent id="info" />
         </div>
         <div className="flex gap-[8px] pr-4">
@@ -55,7 +55,7 @@ function OrderCard({ order }: { order: IOrder }) {
         </div>
       )}
       {(order.stage === 'prepare' && focusReady) && (<div className="bg-white">
-        <button className="w-[288px] text-[#0E73F7] rounded-md h-[36px] bg-white border border-[#0E73F7] mb-[8px]">
+        <button className="sm:w-[288px] w-11/12 text-[#0E73F7] rounded-md h-[36px] bg-white border border-[#0E73F7] mb-[8px]">
           <p className="flex align-middle justify-center">
             <SVGComponent id="acceptBlue"/>
             Готово

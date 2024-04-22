@@ -29,7 +29,7 @@ function OrdersStage({ orders }: { orders: IOrder[] }) {
         </div>
         <div className="flex border border-l-slate-300 border-y-0 border-r-0 mb-[28px] flex-wrap">
           {newStagedOrders.length > 0 && (
-            <div className="w-[342px] py-4 pl-4">
+            <div className="sm:w-[342px] w-[250px] py-4 pl-4">
               <h4 className="leading-6 bg-[#0E73F7] text-white text-left rounded-t-md h-[47px] pl-[10px] flex items-center font-bold tracking-tight">
                 НОВЫЙ ({newStagedOrders.length})
               </h4>
@@ -41,7 +41,7 @@ function OrdersStage({ orders }: { orders: IOrder[] }) {
             </div>
           )}
           {preparingStagedOrders.length > 0 && (
-            <div className="w-[342px] py-4 pl-4">
+            <div className="sm:w-[342px] w-[250px] py-4 pl-4">
               <h4 className="leading-6 bg-[#F8C51A] text-white text-left rounded-t-md h-[47px] pl-[10px] flex items-center font-bold tracking-normal">
                 ЗАГОТОВКА ({preparingStagedOrders.length})
               </h4>
@@ -53,7 +53,7 @@ function OrdersStage({ orders }: { orders: IOrder[] }) {
             </div>
           )}
           {readyStagedOrders.length > 0 && (
-            <div className="w-[344px] py-4 pl-4">
+            <div className="sm:w-[344px] w-[250px] py-4 pl-4">
               <h4 className="leading-6 bg-[#23C349] text-white text-left rounded-t-md h-[47px] pl-[10px] flex items-center font-bold tracking-tight">
                 ГОТОВ ({readyStagedOrders.length})
               </h4>
@@ -65,7 +65,7 @@ function OrdersStage({ orders }: { orders: IOrder[] }) {
             </div>
           )}
           {courierStagedOrders.length > 0 && (
-            <div className="w-[355px] p-4">
+            <div className="sm:w-[355px] w-[250px] py-4 pl-4">
               <h4 className="leading-6 bg-[#19C19D] text-white text-left rounded-t-md h-[47px] pl-[10px] flex items-center font-bold tracking-tight">
                 КУРЬЕР В ПУТИ ({courierStagedOrders.length})
               </h4>
